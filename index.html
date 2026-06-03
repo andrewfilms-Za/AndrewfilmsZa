@@ -6,6 +6,8 @@
 
 <title>Andrew Films | Capturing Stories. Creating Memories.</title>
 
+<meta name="description" content="Andrew Films is a Cape Town based photography and film production company specializing in portraits, events, weddings, music videos, documentaries, and cinematic storytelling.">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -24,7 +26,48 @@ scroll-behavior:smooth;
 body{
 background:#0f0f0f;
 color:white;
+line-height:1.6;
 }
+
+/* Navigation */
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(0,0,0,.95);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+z-index:1000;
+}
+
+.logo{
+font-size:1.5rem;
+font-weight:700;
+color:#d4af37;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#d4af37;
+}
+
+/* Hero */
 
 header{
 height:100vh;
@@ -46,20 +89,27 @@ color:#d4af37;
 }
 
 .hero p{
-font-size:1.3rem;
+font-size:1.2rem;
 margin:15px 0;
 }
 
 .btn{
 display:inline-block;
-padding:15px 30px;
+padding:14px 28px;
 background:#d4af37;
 color:black;
 text-decoration:none;
 font-weight:bold;
-border-radius:5px;
-margin-top:15px;
+border-radius:6px;
+margin:8px;
+transition:.3s;
 }
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* Sections */
 
 section{
 padding:80px 10%;
@@ -101,6 +151,8 @@ color:#d4af37;
 margin-bottom:10px;
 }
 
+/* Pricing Table */
+
 table{
 width:100%;
 border-collapse:collapse;
@@ -119,6 +171,8 @@ border:1px solid #333;
 text-align:center;
 }
 
+/* Contact */
+
 .contact{
 text-align:center;
 }
@@ -127,6 +181,8 @@ text-align:center;
 margin:10px 0;
 font-size:1.1rem;
 }
+
+/* Socials */
 
 .socials{
 display:flex;
@@ -142,17 +198,73 @@ text-decoration:none;
 font-size:1.1rem;
 }
 
+/* Floating WhatsApp */
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+z-index:999;
+box-shadow:0 4px 15px rgba(0,0,0,.4);
+}
+
+/* Footer */
+
 footer{
 background:black;
 text-align:center;
 padding:25px;
-margin-top:40px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.7rem;
+}
+
+nav{
+flex-direction:column;
+padding:15px;
+}
+
+nav ul{
+margin-top:10px;
+flex-wrap:wrap;
+justify-content:center;
+}
 }
 
 </style>
 </head>
 
 <body>
+
+<!-- Navigation -->
+
+<nav>
+
+<div class="logo">Andrew Films</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- Hero -->
 
 <header>
 
@@ -168,27 +280,55 @@ margin-top:40px;
 Book Via WhatsApp
 </a>
 
+<br>
+
+<a href="https://youtube.com/@andrew_filmsza" target="_blank" class="btn">
+▶ View YouTube
+</a>
+
+<a href="https://www.tiktok.com/@andrewfilmsza" target="_blank" class="btn">
+🎬 View TikTok
+</a>
+
 </div>
 
 </header>
 
-<section>
+<!-- About -->
+
+<section id="about">
 
 <h2 class="section-title">About Andrew Films</h2>
 
 <div class="about">
 
 <p>
-Andrew Films is a Cape Town / George based film and photography company dedicated to creating powerful visual stories.
-We specialize in cinematic videography, professional photography, music videos, events, documentaries,
-commercial content and short film production.
+Andrew Films is a Cape Town-based photography and film production company founded by Andrew Bryton.
+We specialize in cinematic storytelling through professional photography, videography, music videos,
+event coverage, portrait sessions, commercial content, documentaries, and short film production.
+</p>
+
+<br>
+
+<p>
+Our mission is to transform real moments into powerful visual stories that inspire, entertain,
+and preserve memories for generations. Every project is approached with creativity, professionalism,
+and attention to detail.
+</p>
+
+<br>
+
+<p>
+At Andrew Films, we believe every story deserves to be told beautifully.
 </p>
 
 </div>
 
 </section>
 
-<section>
+<!-- Services -->
+
+<section id="services">
 
 <h2 class="section-title">Our Services</h2>
 
@@ -233,7 +373,53 @@ commercial content and short film production.
 
 </section>
 
-<section>
+<!-- Portfolio -->
+
+<section id="portfolio">
+
+<h2 class="section-title">View Our Work</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🎬 TikTok Portfolio</h3>
+
+<p>
+Watch behind-the-scenes content, cinematic edits,
+short films and photography highlights.
+</p>
+
+<br>
+
+<a href="https://www.tiktok.com/@andrewfilmsza" target="_blank" class="btn">
+View TikTok
+</a>
+
+</div>
+
+<div class="card">
+<h3>▶ YouTube Portfolio</h3>
+
+<p>
+Watch short films, music videos,
+documentaries and professional productions.
+</p>
+
+<br>
+
+<a href="https://youtube.com/@andrew_filmsza" target="_blank" class="btn">
+View YouTube
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Pricing -->
+
+<section id="pricing">
 
 <h2 class="section-title">Pricing</h2>
 
@@ -283,16 +469,45 @@ commercial content and short film production.
 
 </section>
 
-<section class="contact">
+<!-- Testimonials -->
+
+<section>
+
+<h2 class="section-title">Client Reviews</h2>
+
+<div class="grid">
+
+<div class="card">
+★★★★★
+<p>Professional service and amazing quality. The photos exceeded our expectations.</p>
+<strong>- Sarah M.</strong>
+</div>
+
+<div class="card">
+★★★★★
+<p>Andrew Films captured every important moment perfectly. Highly recommended.</p>
+<strong>- David K.</strong>
+</div>
+
+<div class="card">
+★★★★★
+<p>Creative, reliable and affordable. We loved our final video.</p>
+<strong>- Jessica P.</strong>
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact" class="contact">
 
 <h2 class="section-title">Contact Us</h2>
 
 <p>📧 andrewfilmsza@gmail.com</p>
-
 <p>📞 Calls: 065 597 5148</p>
-
 <p>💬 WhatsApp: 083 541 5467</p>
-
 <p>📍 Strand, Cape Town, South Africa</p>
 
 <a href="https://wa.me/27835415467" class="btn">
@@ -301,29 +516,47 @@ Chat on WhatsApp
 
 </section>
 
+<!-- Socials -->
+
 <section>
 
 <h2 class="section-title">Follow Andrew Films</h2>
 
 <div class="socials">
 
-<a href="#">TikTok: @andrewfilmsZa</a>
+<a href="https://www.facebook.com/andrewfilmsZa" target="_blank">
+Facebook
+</a>
 
-<a href="#">Facebook: Andrew Bryton</a>
+<a href="https://www.tiktok.com/@andrewfilmsza" target="_blank">
+TikTok
+</a>
 
-<a href="#">YouTube: Andrew FilmsZa</a>
+<a href="https://youtube.com/@andrew_filmsza" target="_blank">
+YouTube
+</a>
 
 </div>
 
 </section>
 
+<!-- Footer -->
+
 <footer>
 
-<p>© 2024 Andrew Films</p>
+<p>© 2026 Andrew Films</p>
+
+<p>Photography • Videography • Film Production</p>
 
 <p>Capturing Stories. Creating Memories.</p>
 
 </footer>
+
+<!-- Floating WhatsApp -->
+
+<a href="https://wa.me/27835415467" class="whatsapp-float">
+💬
+</a>
 
 </body>
 </html>
