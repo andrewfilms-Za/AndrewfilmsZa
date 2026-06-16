@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <google-site-verification: googlec0afa78ee064a789.html>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Andrew Films | Capturing Stories. Creating Memories.</title>
-
-<meta name="description" content="Andrew Films is a Cape Town based photography and film production company specializing in portraits, events, weddings, music videos, documentaries, and cinematic storytelling.">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Andrew Films | Premium Photography & Film Production</title><meta name="description" content="Andrew Films - Professional Photography, Videography, Portraits, Events, Weddings, Music Videos and Cinematic Storytelling in Cape Town."><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"><style>
 
 *{
 margin:0;
@@ -25,12 +15,10 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#0f0f0f;
+background:#0d0d0d;
 color:white;
-line-height:1.6;
+line-height:1.7;
 }
-
-/* Navigation */
 
 nav{
 position:fixed;
@@ -42,39 +30,36 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:15px 8%;
-z-index:1000;
+z-index:9999;
 }
 
 .logo{
-font-size:1.5rem;
+font-size:1.6rem;
 font-weight:700;
 color:#d4af37;
 }
 
 nav ul{
 display:flex;
-list-style:none;
 gap:20px;
+list-style:none;
 }
 
-nav ul li a{
+nav a{
 color:white;
 text-decoration:none;
-font-weight:500;
 transition:.3s;
 }
 
-nav ul li a:hover{
+nav a:hover{
 color:#d4af37;
 }
-
-/* Hero */
 
 header{
 height:100vh;
 background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1600');
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('InShot_20260616_103026893.jpg');
 background-size:cover;
 background-position:center;
 display:flex;
@@ -87,11 +72,12 @@ padding:20px;
 .hero h1{
 font-size:4rem;
 color:#d4af37;
+margin-bottom:10px;
 }
 
 .hero p{
 font-size:1.2rem;
-margin:15px 0;
+margin-bottom:10px;
 }
 
 .btn{
@@ -99,21 +85,19 @@ display:inline-block;
 padding:14px 28px;
 background:#d4af37;
 color:black;
+font-weight:600;
 text-decoration:none;
-font-weight:bold;
-border-radius:6px;
-margin:8px;
+border-radius:8px;
+margin:10px;
 transition:.3s;
 }
 
 .btn:hover{
-transform:translateY(-3px);
+transform:translateY(-4px);
 }
 
-/* Sections */
-
 section{
-padding:80px 10%;
+padding:90px 10%;
 }
 
 .section-title{
@@ -127,7 +111,6 @@ color:#d4af37;
 max-width:900px;
 margin:auto;
 text-align:center;
-font-size:1.1rem;
 }
 
 .grid{
@@ -139,7 +122,7 @@ gap:20px;
 .card{
 background:#1b1b1b;
 padding:25px;
-border-radius:10px;
+border-radius:12px;
 transition:.3s;
 }
 
@@ -152,89 +135,112 @@ color:#d4af37;
 margin-bottom:10px;
 }
 
-/* Pricing Table */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:15px;
+transition:.4s;
+cursor:pointer;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+video{
+border-radius:15px;
+}
 
 table{
 width:100%;
 border-collapse:collapse;
-margin-top:20px;
 }
 
-table th{
+th{
 background:#d4af37;
 color:black;
 padding:15px;
 }
 
-table td{
+td{
 padding:15px;
 border:1px solid #333;
 text-align:center;
 }
 
-/* Contact */
+form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,
+textarea{
+padding:15px;
+border:none;
+border-radius:8px;
+}
+
+button{
+border:none;
+cursor:pointer;
+}
 
 .contact{
 text-align:center;
 }
 
-.contact p{
-margin:10px 0;
-font-size:1.1rem;
-}
-
-/* Socials */
-
 .socials{
 display:flex;
 justify-content:center;
-flex-wrap:wrap;
 gap:20px;
-margin-top:30px;
+flex-wrap:wrap;
 }
 
 .socials a{
 color:#d4af37;
 text-decoration:none;
-font-size:1.1rem;
 }
 
-/* Floating WhatsApp */
+footer{
+background:black;
+text-align:center;
+padding:30px;
+}
 
 .whatsapp-float{
 position:fixed;
 bottom:20px;
 right:20px;
+background:#25D366;
 width:60px;
 height:60px;
-background:#25D366;
 border-radius:50%;
 display:flex;
 justify-content:center;
 align-items:center;
-font-size:30px;
+font-size:28px;
 text-decoration:none;
-z-index:999;
-box-shadow:0 4px 15px rgba(0,0,0,.4);
-}
-
-/* Footer */
-
-footer{
-background:black;
-text-align:center;
-padding:25px;
+z-index:9999;
 }
 
 @media(max-width:768px){
 
 .hero h1{
-font-size:2.7rem;
+font-size:2.6rem;
 }
 
 nav{
 flex-direction:column;
-padding:15px;
 }
 
 nav ul{
@@ -242,322 +248,81 @@ margin-top:10px;
 flex-wrap:wrap;
 justify-content:center;
 }
+
 }
 
-</style>
-</head>
-
-<body>
-
-<!-- Navigation -->
-
-<nav>
-
-<div class="logo">Andrew Films</div>
-
-<ul>
+</style></head><body><nav><div class="logo">📷 Andrew Films</div><ul>
 <li><a href="#about">About</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#portfolio">Portfolio</a></li>
 <li><a href="#pricing">Pricing</a></li>
 <li><a href="#contact">Contact</a></li>
-</ul>
+</ul></nav><header><div class="hero"><h1>Andrew Films</h1><p>Premium Photography & Cinematic Film Production</p><p>Portraits • Events • Weddings • Music Videos • Storytelling</p><a href="https://wa.me/27835415467" class="btn">Book Via WhatsApp</a>
 
-</nav>
+<a href="https://youtube.com/@andrew_filmsza" class="btn">YouTube</a>
 
-<!-- Hero -->
-
-<header>
-
-<div class="hero">
-
-<h1>Andrew Films</h1>
-
-<p>Capturing Stories. Creating Memories.</p>
-
-<p>Cinematic Storytelling • Photography • Video Production</p>
-
-<a href="https://wa.me/27835415467" class="btn">
-Book Via WhatsApp
-</a>
-
-<br>
-
-<a href="https://youtube.com/@andrew_filmsza" target="_blank" class="btn">
-▶ View YouTube
-</a>
-
-<a href="https://www.tiktok.com/@andrewfilmsza" target="_blank" class="btn">
-🎬 View TikTok
-</a>
-
-</div>
-
-</header>
-
-<!-- About -->
-
-<section id="about">
-
-<h2 class="section-title">About Andrew Films</h2>
-
-<div class="about">
-
-<p>
-Andrew Films is a Cape Town-based photography and film production company founded by Andrew Bryton.
-We specialize in cinematic storytelling through professional photography, videography, music videos,
-event coverage, portrait sessions, commercial content, documentaries, and short film production.
-</p>
-
-<br>
-
-<p>
-Our mission is to transform real moments into powerful visual stories that inspire, entertain,
-and preserve memories for generations. Every project is approached with creativity, professionalism,
-and attention to detail.
-</p>
-
-<br>
-
-<p>
-At Andrew Films, we believe every story deserves to be told beautifully.
-</p>
-
-</div>
-
-</section>
-
-<!-- Services -->
-
-<section id="services">
-
-<h2 class="section-title">Our Services</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Studio Portraits</h3>
-<p>Professional portrait photography.</p>
-</div>
-
-<div class="card">
-<h3>Family Shoots</h3>
-<p>Capture unforgettable family moments.</p>
-</div>
-
-<div class="card">
-<h3>Event Photography</h3>
-<p>Birthdays, celebrations and special occasions.</p>
-</div>
-
-<div class="card">
-<h3>Music Videos</h3>
-<p>Creative cinematic music video production.</p>
-</div>
-
-<div class="card">
-<h3>Wedding Videos</h3>
-<p>Beautiful wedding films and highlights.</p>
-</div>
-
-<div class="card">
-<h3>Corporate Videos</h3>
-<p>Promotional and business content.</p>
-</div>
-
-<div class="card">
-<h3>Short Film Production</h3>
-<p>Professional storytelling and filmmaking.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- Portfolio -->
-
-<section id="portfolio">
-
-<h2 class="section-title">View Our Work</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>🎬 TikTok Portfolio</h3>
-
-<p>
-Watch behind-the-scenes content, cinematic edits,
-short films and photography highlights.
-</p>
-
-<br>
-
-<a href="https://www.tiktok.com/@andrewfilmsza" target="_blank" class="btn">
-View TikTok
-</a>
-
-</div>
-
-<div class="card">
-<h3>▶ YouTube Portfolio</h3>
-
-<p>
-Watch short films, music videos,
-documentaries and professional productions.
-</p>
-
-<br>
-
-<a href="https://youtube.com/@andrew_filmsza" target="_blank" class="btn">
-View YouTube
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Pricing -->
-
-<section id="pricing">
-
-<h2 class="section-title">Pricing</h2>
-
-<table>
-
-<tr>
+</div></header><section id="about"><h2 class="section-title">About Andrew Films</h2><div class="about"><p>
+Andrew Films is a Cape Town based photography and film production company founded by Andrew Bryton.
+</p><br><p>
+We specialize in professional portraits, weddings, events, documentaries, music videos and cinematic storytelling.
+</p><br><p>
+Every project is approached with creativity, professionalism and attention to detail.
+</p></div></section><section><div class="grid"><div class="card">
+<h3>Professional</h3>
+<p>Photography & Film Production</p>
+</div><div class="card">
+<h3>Cape Town</h3>
+<p>Serving Clients Across The Western Cape</p>
+</div><div class="card">
+<h3>Quality</h3>
+<p>Creative Visual Storytelling</p>
+</div></div></section><section id="services"><h2 class="section-title">Services</h2><div class="grid"><div class="card"><h3>Studio Portraits</h3></div>
+<div class="card"><h3>Family Shoots</h3></div>
+<div class="card"><h3>Event Photography</h3></div>
+<div class="card"><h3>Wedding Videos</h3></div>
+<div class="card"><h3>Music Videos</h3></div>
+<div class="card"><h3>Short Film Production</h3></div></div></section><section id="portfolio"><h2 class="section-title">Featured Portfolio</h2><div class="gallery"><img src="InShot_20260616_103026893.jpg"><img src="InShot_20260616_104707235.jpg"><img src="InShot_20260616_105716880.jpg"><img src="InShot_20260616_110029730.jpg"></div></section><section><h2 class="section-title">Behind The Scenes</h2><div style="max-width:900px;margin:auto;"><video controls width="100%"><source src="2026-05-02-092553932.mp4" type="video/mp4"></video></div></section><section id="pricing"><h2 class="section-title">Pricing</h2><table><tr>
 <th>Service</th>
 <th>Price</th>
-</tr>
-
-<tr>
-<td>Studio Portraits</td>
+</tr><tr>
+<td>Portrait Session</td>
 <td>From R350</td>
-</tr>
-
-<tr>
+</tr><tr>
 <td>Family Shoot</td>
 <td>From R600</td>
-</tr>
-
-<tr>
+</tr><tr>
 <td>Event Photography</td>
-<td>From R1,200</td>
-</tr>
-
-<tr>
+<td>From R1200</td>
+</tr><tr>
 <td>Music Video</td>
-<td>From R2,500</td>
-</tr>
-
-<tr>
+<td>From R2500</td>
+</tr><tr>
 <td>Wedding Video</td>
-<td>From R3,500</td>
-</tr>
+<td>From R3500</td>
+</tr></table></section><section><div class="card" style="text-align:center;"><h2 style="color:#d4af37;">Ready To Book?</h2><p>Let's create something unforgettable together.</p><br><a href="https://wa.me/27835415467" class="btn">WhatsApp Now</a>
 
-<tr>
-<td>Corporate Video</td>
-<td>From R2,000</td>
-</tr>
+<a href="tel:0655975148" class="btn">Call Now</a>
 
-<tr>
-<td>Short Film Production</td>
-<td>Quote Required</td>
-</tr>
-
-</table>
-
-</section>
-
-<!-- Testimonials -->
-
-<section>
-
-<h2 class="section-title">Client Reviews</h2>
-
-<div class="grid">
-
-<div class="card">
+</div></section><section><h2 class="section-title">Client Reviews</h2><div class="grid"><div class="card">
 ★★★★★
-<p>Professional service and amazing quality. The photos exceeded our expectations.</p>
-<strong>- Sarah M.</strong>
-</div>
-
-<div class="card">
+<p>Amazing quality and professional service.</p>
+</div><div class="card">
 ★★★★★
-<p>Andrew Films captured every important moment perfectly. Highly recommended.</p>
-<strong>- David K.</strong>
-</div>
-
-<div class="card">
+<p>Creative, reliable and easy to work with.</p>
+</div><div class="card">
 ★★★★★
-<p>Creative, reliable and affordable. We loved our final video.</p>
-<strong>- Jessica P.</strong>
-</div>
+<p>Highly recommended for photography and video production.</p>
+</div></div></section><section><h2 class="section-title">Book A Session</h2><form action="https://formsubmit.co/andrewfilmsza@gmail.com" method="POST"><input type="text" name="name" placeholder="Your Name" required><input type="email" name="email" placeholder="Your Email" required><input type="tel" name="phone" placeholder="Phone Number"><textarea name="message" rows="5" placeholder="Tell us about your project"></textarea><button type="submit" class="btn">Send Booking Request</button>
 
-</div>
+</form></section><section id="contact" class="contact"><h2 class="section-title">Contact Andrew Films</h2><p>📞 065 597 5148</p><p>💬 WhatsApp: 083 541 5467</p><p>📧 andrewfilmsza@gmail.com</p><p>📍 Strand, Cape Town, South Africa</p><br><a href="https://wa.me/27835415467" class="btn">Book Via WhatsApp</a>
 
-</section>
+</section><section><h2 class="section-title">Follow Andrew Films</h2><div class="socials"><a href="https://www.facebook.com/andrewfilmsZa">Facebook</a>
 
-<!-- Contact -->
+<a href="https://www.tiktok.com/@andrewfilmsza">TikTok</a>
 
-<section id="contact" class="contact">
+<a href="https://youtube.com/@andrew_filmsza">YouTube</a>
 
-<h2 class="section-title">Contact Us</h2>
-
-<p>📧 andrewfilmsza@gmail.com</p>
-<p>📞 Calls: 065 597 5148</p>
-<p>💬 WhatsApp: 083 541 5467</p>
-<p>📍 Strand, Cape Town, South Africa</p>
-
-<a href="https://wa.me/27835415467" class="btn">
-Chat on WhatsApp
-</a>
-
-</section>
-
-<!-- Socials -->
-
-<section>
-
-<h2 class="section-title">Follow Andrew Films</h2>
-
-<div class="socials">
-
-<a href="https://www.facebook.com/andrewfilmsZa" target="_blank">
-Facebook
-</a>
-
-<a href="https://www.tiktok.com/@andrewfilmsza" target="_blank">
-TikTok
-</a>
-
-<a href="https://youtube.com/@andrew_filmsza" target="_blank">
-YouTube
-</a>
-
-</div>
-
-</section>
-
-<!-- Footer -->
-
-<footer>
-
-<p>© 2026 Andrew Films</p>
-
-<p>Photography • Videography • Film Production</p>
-
-<p>Capturing Stories. Creating Memories.</p>
-
-</footer>
-
-<!-- Floating WhatsApp -->
-
-<a href="https://wa.me/27835415467" class="whatsapp-float">
+</div></section><footer><p>© 2026 Andrew Films</p><p>Capturing Stories. Creating Memories.</p></footer><a href="https://wa.me/27835415467" class="whatsapp-float">
 💬
-</a>
-
-</body>
+</a></body>
 </html>
