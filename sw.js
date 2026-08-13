@@ -3,6 +3,8 @@ const APP_SHELL = [
   "./",
   "./index.html",
   "./manifest.json",
+  "./icon-192.png",
+"./icon-512.png",
   "./offline.html",
   "./Screenshot_20260617_142358_ChatGPT.jpg",
   "./file_0000000033f0823089605829abcb56ce.png",
