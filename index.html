@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- ANDREW FILMS ZA PWA -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#050505">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Andrew Films ZA">
+
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -662,6 +672,18 @@ lightbox.addEventListener('click', e => { if(e.target === lightbox) closeLightbo
 document.addEventListener('keydown', e => { if(e.key === 'Escape') closeLightbox(); });
 
 document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+  <script>
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+        navigator.serviceWorker.register("./sw.js")
+            .then(function (registration) {
+                console.log("Andrew Films ZA PWA installed:", registration.scope);
+            })
+            .catch(function (error) {
+                console.log("PWA Service Worker registration failed:", error);
+            });
+    });
+}
+  </script>
 </body>
 </html>
