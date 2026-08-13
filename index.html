@@ -672,7 +672,7 @@ lightbox.addEventListener('click', e => { if(e.target === lightbox) closeLightbo
 document.addEventListener('keydown', e => { if(e.key === 'Escape') closeLightbox(); });
 
 document.getElementById('year').textContent = new Date().getFullYear();
-  <script>
+
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", function () {
         navigator.serviceWorker.register("./sw.js")
