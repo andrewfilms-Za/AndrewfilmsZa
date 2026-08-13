@@ -1,0 +1,31 @@
+{
+  "name": "Andrew Films ZA",
+  "short_name": "Andrew Films",
+  "description": "Andrew Films ZA \u2014 Capturing Stories. Creating Memories.",
+  "lang": "en-ZA",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "categories": [
+    "photography",
+    "video",
+    "business"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
